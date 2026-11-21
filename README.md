@@ -4,6 +4,17 @@ Convert a local OpenStreetMap extract into a 2D vector map for SimLife. The brow
 
 The converter uses Python 3.9 or newer and its standard library. The viewer uses HTML, CSS and JavaScript. Conversion and preview work offline.
 
+## City data downloads
+
+The [2026-11-21 city data release](https://github.com/Riftar/simlife/releases/tag/data-2026-11-21) has one archive per city for New York, Bangkok, Jakarta, Tokyo, and Paris. Each archive includes OSM XML, compiled maps, timetable snapshots from the available agencies, and a manifest with checksums and data licenses. Bangkok, Jakarta, and Tokyo also include color-coded train overlays.
+
+After extracting the Bangkok archive, serve its compiled map and overlay from the repository root.
+
+```sh
+python3 -m simlife_map serve /path/to/maps/bangkok-region.map.json.gz \
+  --train-lines /path/to/maps/bangkok.trains.json
+```
+
 ## Convert and preview
 
 ```sh
