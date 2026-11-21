@@ -1,12 +1,14 @@
 # SimLife
 
-Convert a local OpenStreetMap extract into a 2D vector map for SimLife. The browser preview renders selected roads, railways, stations, buildings, parks and water in Canvas. Zoom in for local streets and building footprints.
+SimLife is an offline city simulation in development. The first playable scenario follows a commuter home, lets you replay the same rush hour with a different traffic signal, and compares on-time arrivals across two neighborhoods.
+
+The current build converts OpenStreetMap extracts into 2D vector maps. Its Canvas preview shows roads, railways, stations, buildings, parks, and water. Zoom in for local streets and building footprints. The simulation, commuter tracking, and scenario controls are planned in the [roadmap](ROADMAP.md).
 
 The converter uses Python 3.9 or newer and its standard library. The viewer uses HTML, CSS and JavaScript. Conversion and preview work offline.
 
 ## Desktop mode offline
 
-Use the pre-uploaded [Bangkok desktop ZIP](https://github.com/Riftar/simlife/releases/tag/desktop-2026-11-21). It contains this source tree, pinned CPython 3.12.16 runtimes, the CMake and pyosmium wheels with their transitive dependencies, and a trimmed 25 × 26 km Bangkok map. The archive includes raw OSM XML, a compiled map, color-coded rail overlays, the timetable snapshot, and attribution. All files needed for the preview are inside the ZIP.
+The [Bangkok desktop ZIP](https://github.com/Riftar/simlife/releases/tag/desktop-2026-11-21) is 255 MB. It includes the tagged release's source and artwork, pinned CPython 3.12.16 runtimes, and CMake and pyosmium wheels with their transitive dependencies. The 25 × 26 km Bangkok extract includes raw OSM XML, a compiled map, nine color-coded train lines, the timetable snapshot, and attribution. Everything needed for the preview is inside the ZIP.
 
 Verify the archive against the release's `SHA256SUMS.txt` and extract it on the desktop. On Apple Silicon macOS or x86-64 GNU/Linux with glibc 2.28 or later, run these commands from the extracted folder and open [the localhost map](http://127.0.0.1:8766/).
 
@@ -32,11 +34,11 @@ uv run --locked -m tools.build_desktop_bundle pack build/desktop/payload build/d
 
 ## Development setup
 
-The [roadmap](ROADMAP.md) sets the first real-city milestone at 100,000 residents. Start with the synthetic rush-hour scenario and use a city archive when building the real-road importer. The native simulation core is planned.
+The first milestone is a playable evening commute in a small fictional city. The next brings that experience to one Bangkok district with 100,000 individually tracked synthetic residents. The year benchmark, campaign, and modding API have their own release checks. [Milestones and acceptance criteria](ROADMAP.md#planned)
 
 Install `uv` and a C++17 compiler with Make. Use Xcode Command Line Tools on macOS or GCC and Make on Linux. On macOS, run `xcode-select --install` if the command-line tools are missing. [Install uv](https://docs.astral.sh/uv/getting-started/installation/)
 
-Run this from the repository root after checkout. It prepares the Python 3.12 environment and runs the C++17, PBF, SQLite, and converter checks.
+For a checkout on a connected machine, run this from the repository root. It prepares the Python 3.12 environment and runs the C++17, PBF, SQLite, and converter checks. Use the [desktop bundle](#desktop-mode-offline) to prepare the same libraries on an offline machine.
 
 ```sh
 uv run --locked --no-build python tools/check_toolchain.py
@@ -46,7 +48,7 @@ uv run --locked --no-build python tools/check_toolchain.py
 
 ## Game assets
 
-The [asset kit](assets/game/README.md) includes editable resident portraits and transport sprites, an SVG icon catalog, reusable menu styles, and generated menu and campaign illustrations. Its local browser gallery previews variants and exports SVGs and recipes.
+The [asset kit](assets/game/README.md) includes editable resident portraits and transport sprites, SVG icons, reusable menu styles, and menu and campaign illustrations. Its local gallery previews variants and exports SVGs and recipes. See the [landmark guide](assets/landmarks/README.md) for the separate concept sheets and source feature IDs.
 
 ## City data downloads
 
@@ -72,7 +74,7 @@ Download and verify Bangkok, then keep the extracted files under `build/city-dat
 Serve the Bangkok map and overlay from the repository root.
 
 ```sh
-uv run --offline --locked --no-build python -m simlife_map serve \
+python3 -m simlife_map serve \
   build/city-data/bangkok/maps/bangkok-region.map.json.gz \
   --train-lines build/city-data/bangkok/maps/bangkok.trains.json
 ```

@@ -1,6 +1,10 @@
-# Tokyo and Bangkok landmarks
+# SimLife landmark concepts
 
-This ImageGen concept sheet contains six proposed landmark illustrations. It is a visual reference for future clickable map details. The illustrations have glow and backgrounds, so they need isolated crops or regenerated transparent assets before direct map placement.
+These ImageGen sheets provide references for future clickable landmarks. The starter rush-hour map uses scenario geometry and the [game asset kit](../game/README.md#first-playable-rush-hour). Use the kit's `landmark` icon for a point marker when needed. Individual landmark illustrations require isolated crops or transparent variants before direct placement.
+
+## Tokyo and Bangkok
+
+The [two-city concept sheet](tokyo-bangkok-concepts.png) contains six landmark illustrations.
 
 | Cell | Landmark | City | OpenStreetMap feature |
 | --- | --- | --- | --- |
@@ -13,7 +17,7 @@ This ImageGen concept sheet contains six proposed landmark illustrations. It is 
 
 The cited features are present in the published city extracts. [Map data coverage and placement points](map-data.md). OpenStreetMap data is © OpenStreetMap contributors, [ODbL 1.0](https://www.openstreetmap.org/copyright). Generated images are illustrative interpretations.
 
-## Prompt
+### Prompt
 
 Create a 3 by 2 sprite atlas of 6 tiny low-poly isometric 3D landmark miniatures, each isolated on a fully transparent alpha background. Exact 3 columns and 2 rows, centered, wide transparent margins within each cell. Top row Tokyo Tower, Tokyo Skytree, Senso-ji temple. Bottom row Wat Arun temple, Bangkok Grand Palace, Bangkok Giant Swing. Simple clean flat-shaded architecture, no text, no backdrop, no glow, no ground or shadows. Clear alpha between objects and no touching cell edges.
 

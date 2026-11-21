@@ -1,6 +1,6 @@
 # SimLife game asset kit
 
-Open the [local gallery](http://127.0.0.1:8772/assets/game/) after serving the repository root.
+Open the [local gallery](http://127.0.0.1:8772/assets/game/) after serving the source root with Python 3. Run this from a checkout or the extracted desktop ZIP. [Desktop setup](../../README.md#desktop-mode-offline)
 
 ```sh
 python3 -m http.server 8772 --bind 127.0.0.1
@@ -15,6 +15,12 @@ The gallery previews menus and playback, edits portraits and vehicles, and searc
 | Game icons | [icons.svg](icons.svg) has 174 named, editable 24 × 24 symbols in 11 categories. It covers navigation and files, map layers, playback, commuters, transport, land use, utilities, incidents, the economy, the scenario editor, and feedback states. [icons.mjs](icons.mjs) provides inline references and standalone export. [app-icon.svg](app-icon.svg) is the separate 64 × 64 launcher and browser icon. |
 | Menus and controls | [menu.css](menu.css) contains colors, typography, buttons, menu layout, and scenario card styles. [index.html](index.html) shows how to assemble them with normal HTML. The keyboard focus style works with the system fonts and local assets. |
 | Menu and campaign illustrations | [Last Train Home](illustrations/last-train-home.png) and [High Water](illustrations/high-water.png) are full-bleed 1536 × 1024 PNGs. They contain no baked-in UI text. |
+
+## First playable rush hour
+
+Use the portrait generator for the commuter inspector and the top-down `sedan` sprite for traffic. The icon catalog has `follow`, `home`, `work`, `route`, `signal`, `waiting`, `queue`, `play`, `pause`, `step`, `rewind`, `save`, `load`, and `compare` for the trip, signal, and replay controls. Use the menu styles for the playback strip and status labels.
+
+Draw the bridge, road links, and home and job zones in Canvas from the synthetic scenario's geometry. The simulation supplies the fixture, vehicle positions, queue state, and results. For the Bangkok closure scenario, reuse the same assets with the bundled map and the `road-closure` icon. The separate [landmark sheets](../landmarks/README.md) are references for future city details.
 
 ## Use in the browser
 

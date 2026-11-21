@@ -2,7 +2,7 @@
 
 The published 2026-11-21 Tokyo and Bangkok OpenStreetMap XML extracts contain the original OSM names, feature IDs, tags, and coordinates. They are available offline after downloading the corresponding city archives from the [city data release](https://github.com/Riftar/simlife/releases/tag/data-2026-11-21).
 
-The counts below come from the local source XML snapshot. They count OSM nodes, ways, and relations. A single place can have multiple records, and the totals are not counts of unique physical places.
+The counts below apply to the full city archives. They count OSM nodes, ways, and relations, and one place may have multiple records. The [desktop ZIP](../../README.md#desktop-mode-offline) contains a trimmed Bangkok subset for the offline demo. Use the manifest in the chosen archive to check its coverage.
 
 | Extract | Named records | With name:en | With int_name | With name in local Latin script | building tags | shop tags | office tags |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
