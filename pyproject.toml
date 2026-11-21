@@ -1,0 +1,14 @@
+[project]
+name = "simlife"
+version = "0.1.0"
+requires-python = ">=3.12,<3.13"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "cmake==4.4.5",
+    "osmium==4.3.2",
+]
+
+[tool.uv]
+package = false

@@ -1,18 +1,50 @@
-# SimLife map converter
+# SimLife
 
 Convert a local OpenStreetMap extract into a 2D vector map for SimLife. The browser preview renders selected roads, railways, stations, buildings, parks and water in Canvas. Zoom in for local streets and building footprints.
 
 The converter uses Python 3.9 or newer and its standard library. The viewer uses HTML, CSS and JavaScript. Conversion and preview work offline.
 
+## Development setup
+
+The [roadmap](ROADMAP.md) sets the first real-city milestone at 100,000 residents. Start with the synthetic rush-hour scenario and use a city archive when building the real-road importer. The native simulation core is planned.
+
+Install `uv` and a C++17 compiler with Make. Use Xcode Command Line Tools on macOS or GCC and Make on Linux. On macOS, run `xcode-select --install` if the command-line tools are missing. [Install uv](https://docs.astral.sh/uv/getting-started/installation/)
+
+Run this from the repository root after checkout. It prepares the Python 3.12 environment and runs the C++17, PBF, SQLite, and converter checks.
+
+```sh
+uv run --locked --no-build python tools/check_toolchain.py
+```
+
+`uv.lock` pins CMake (including CTest), pyosmium, and transitive packages by version and SHA-256. The first run can download Python and wheels. Once they are cached on the machine, the same setup and check work locally with `uv run --offline --locked --no-build python tools/check_toolchain.py`. The PBF check uses a generated fixture. [CMake package](https://pypi.org/project/cmake/4.4.5/) · [Pyosmium package](https://pypi.org/project/osmium/4.3.2/)
+
 ## City data downloads
 
 The [2026-11-21 city data release](https://github.com/Riftar/simlife/releases/tag/data-2026-11-21) has one archive per city for New York, Bangkok, Jakarta, Tokyo, and Paris. Each archive includes OSM XML, compiled maps, timetable snapshots from the available agencies, and a manifest with checksums and data licenses. Bangkok, Jakarta, and Tokyo also include color-coded train overlays.
 
-After extracting the Bangkok archive, serve its compiled map and overlay from the repository root.
+Download and verify Bangkok, then keep the extracted files under `build/city-data/` for local use. To fetch another city, set `city` to `jakarta`, `new-york`, `paris`, or `tokyo`.
 
 ```sh
-python3 -m simlife_map serve /path/to/maps/bangkok-region.map.json.gz \
-  --train-lines /path/to/maps/bangkok.trains.json
+(
+  set -e
+  city=bangkok
+  archive="simlife-$city-2026-11-21.zip"
+  base=https://github.com/Riftar/simlife/releases/download/data-2026-11-21
+  mkdir -p build/city-data
+  cd build/city-data
+  curl -fLsS -o SHA256SUMS.txt "$base/SHA256SUMS.txt"
+  curl -fLsS -o "$archive" "$base/$archive"
+  awk -v archive="$archive" '$2 == archive' SHA256SUMS.txt | shasum -a 256 -c
+  unzip -qn "$archive" -d "$city"
+)
+```
+
+Serve the Bangkok map and overlay from the repository root.
+
+```sh
+uv run --offline --locked --no-build python -m simlife_map serve \
+  build/city-data/bangkok/maps/bangkok-region.map.json.gz \
+  --train-lines build/city-data/bangkok/maps/bangkok.trains.json
 ```
 
 ## Convert and preview
