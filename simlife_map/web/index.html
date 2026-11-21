@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/map.css">
+  <title>SimLife map</title>
+  <script src="/map.js" defer></script>
+</head>
+<body>
+  <header>
+    <a class="brand" href="/" aria-label="SimLife map home">SimLife</a>
+    <h1 id="map-name">City map</h1>
+    <span id="map-size"></span>
+  </header>
+  <main>
+    <section class="viewport" aria-label="Interactive city map">
+      <canvas id="map" tabindex="0" aria-label="City map. Drag or use the arrow keys to pan. Use plus and minus to zoom."></canvas>
+      <div class="north" aria-label="North is up">N<span></span></div>
+      <div class="navigation" aria-label="Map navigation">
+        <button id="zoom-in" type="button" aria-label="Zoom in" title="Zoom in">+</button>
+        <button id="zoom-out" type="button" aria-label="Zoom out" title="Zoom out">−</button>
+        <button id="fit" type="button" title="Fit map">Fit</button>
+      </div>
+      <div id="scale" class="scale" aria-hidden="true" hidden></div>
+      <p class="status" id="map-status" role="status">Loading map…</p>
+      <a class="attribution" href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors</a>
+    </section>
+    <aside>
+      <h2>Layers</h2>
+      <fieldset aria-label="Visible layers">
+        <label><input type="checkbox" data-layer="roads" checked><i class="sample road"></i><span>Roads</span></label>
+        <label id="train-layer" hidden><input type="checkbox" data-layer="trains" checked><i class="sample train"></i><span>Train lines</span></label>
+        <label><input type="checkbox" data-layer="rail" checked><i class="sample rail"></i><span>Rail tracks</span></label>
+        <label><input type="checkbox" data-layer="stations" checked><i class="sample station"></i><span>Stations</span></label>
+        <label><input type="checkbox" data-layer="buildings" checked><i class="sample building"></i><span>Buildings</span></label>
+        <label><input type="checkbox" data-layer="water" checked><i class="sample water"></i><span>Water</span></label>
+        <label><input type="checkbox" data-layer="green" checked><i class="sample green"></i><span>Parks and green space</span></label>
+      </fieldset>
+      <p class="help">Zoom in to see local streets, individual buildings, and station names.</p>
+      <section id="train-legend" aria-label="Train line selection" hidden>
+        <h3>Train lines</h3>
+        <div id="line-choices"></div>
+      </section>
+    </aside>
+  </main>
+</body>
+</html>
