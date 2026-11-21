@@ -9,6 +9,10 @@ SimLife is a locally runnable city simulation about how people get home. Players
 - Color-coded train overlays for Bangkok, Jakarta, and Tokyo, plus landmark concepts for all five cities.
 - A locked development environment and a toolchain check documented in the [README](README.md).
 
+## Desktop mode
+
+Use the pre-uploaded [Bangkok desktop ZIP](https://github.com/Riftar/simlife/releases/tag/desktop-2026-11-21) on the offline desktop. The ZIP stays under 1 GB and includes the project source, pinned local packages and Python runtimes, and one trimmed Bangkok OpenStreetMap extract with its compiled map and transit overlays. Run the map from `localhost` using the bundled launcher. City data retains its source licenses. [Desktop setup](README.md#desktop-mode-offline)
+
 ## Planned
 
 ### A playable rush hour
@@ -27,6 +31,13 @@ Add editable zoning, utilities, an economy, and disasters. Provide scenarios tha
 
 Add local timetable import, walking and transfers, buses, and trains. Complete the 20-scenario campaign and add a versioned modding interface.
 
-The full-version goals include completing a 100,000-resident simulation year in ten minutes on a documented reference machine, preserving checksums across save and load, passing all campaign scenarios with bots, and passing 1,000 mod API cases. These are targets to measure during development.
+## Full-version acceptance criteria
 
-SimLife can use libraries and online sources when they improve development or gameplay. Pin and prepare dependencies and city data so builders can work locally after setup. City maps and transit snapshots carry their own data licenses.
+All four checks must pass on the same release build. Record the build and fixture versions, commands, and results in the release report.
+
+| Goal | Pass condition |
+| --- | --- |
+| Simulate 100,000 residents for a year | Three fresh headless runs of the same benchmark city each advance 100,000 individually tracked residents through 365 game days in **600 seconds or less** on the documented reference machine. Time from opening the compiled fixture to emitting the final summary. Account for all 73 million baseline commute requests and match the final checksums across runs. |
+| Resume a save deterministically | Save during rush-hour congestion, during an active disruption, and just before a day boundary. Restore each save in a fresh process. Hash the canonical simulation state and require exact matches to the uninterrupted run immediately after load, after the next day transition, and at year-end. |
+| Win the whole campaign with bots | Finish **20 out of 20** published campaign scenarios on their canonical seeds. Bots use the same observations and commands as players. Each scenario's own scorer must award a win within its published limits. |
+| Pass the mod API contract | Run at least **1,000 distinct** cases offline through the public mod API and package interfaces. Require all release cases to pass with zero failures or skips. Cover validation, commands and observations, replay and persistence, and editor package round trips. |

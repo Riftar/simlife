@@ -4,6 +4,32 @@ Convert a local OpenStreetMap extract into a 2D vector map for SimLife. The brow
 
 The converter uses Python 3.9 or newer and its standard library. The viewer uses HTML, CSS and JavaScript. Conversion and preview work offline.
 
+## Desktop mode offline
+
+Use the pre-uploaded [Bangkok desktop ZIP](https://github.com/Riftar/simlife/releases/tag/desktop-2026-11-21). It contains this source tree, pinned CPython 3.12.16 runtimes, the CMake and pyosmium wheels with their transitive dependencies, and a trimmed 25 × 26 km Bangkok map. The archive includes raw OSM XML, a compiled map, color-coded rail overlays, the timetable snapshot, and attribution. All files needed for the preview are inside the ZIP.
+
+Verify the archive against the release's `SHA256SUMS.txt` and extract it on the desktop. On Apple Silicon macOS or x86-64 GNU/Linux with glibc 2.28 or later, run these commands from the extracted folder and open [the localhost map](http://127.0.0.1:8766/).
+
+```sh
+cd simlife-desktop-bangkok
+sh tools/desktop.sh serve
+```
+
+The launcher uses the bundled Python runtime. To prepare the pinned libraries in a bundle-local environment and run the development checks, use the command below. The C++ check uses the desktop's C++17 compiler and Make.
+
+```sh
+sh tools/desktop.sh check
+```
+
+Use `sh tools/desktop.sh python` with Python arguments to run future importer commands with the bundled libraries. The wheel installer uses the bundled files and verifies their lockfile hashes.
+
+To rebuild the release ZIP on a connected machine, first extract the Bangkok city archive described below. Prepare the payload, then package it with the committed source tree. The builder emits `SHA256SUMS.txt` and enforces the 1 GB cap.
+
+```sh
+uv run --locked -m tools.build_desktop_bundle prepare build/city-data/bangkok build/desktop/payload
+uv run --locked -m tools.build_desktop_bundle pack build/desktop/payload build/desktop/simlife-desktop-bangkok.zip
+```
+
 ## Development setup
 
 The [roadmap](ROADMAP.md) sets the first real-city milestone at 100,000 residents. Start with the synthetic rush-hour scenario and use a city archive when building the real-road importer. The native simulation core is planned.
