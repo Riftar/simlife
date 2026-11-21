@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <!-- Navigation and files -->
+  <symbol id="menu" data-group="Navigation" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+  <symbol id="back" data-group="Navigation" viewBox="0 0 24 24"><path d="m10 5-7 7 7 7M3 12h18"/></symbol>
+  <symbol id="forward" data-group="Navigation" viewBox="0 0 24 24"><path d="m14 5 7 7-7 7M3 12h18"/></symbol>
+  <symbol id="chevron-down" data-group="Navigation" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="close" data-group="Navigation" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+  <symbol id="search" data-group="Navigation" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="5.5"/><path d="m15 15 5 5"/></symbol>
+  <symbol id="settings" data-group="Navigation" viewBox="0 0 24 24"><path d="m10 3-1 3-3 1-3 4 2 3-1 3 4 3 4-1 3 2 4-3v-4l2-3-2-4-4-1-1-3Z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="help" data-group="Navigation" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 4 2c-1 .7-1.5 1-1.5 2.5m0 3h.01"/></symbol>
+  <symbol id="info" data-group="Navigation" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5m0-8h.01"/></symbol>
+  <symbol id="save" data-group="Navigation" viewBox="0 0 24 24"><path d="M4 4h13l3 3v13H4Zm4 0v6h8V4M8 20v-6h8v6"/></symbol>
+  <symbol id="load" data-group="Navigation" viewBox="0 0 24 24"><path d="M3 6h7l2 2h9v11H3Zm9 10v-5m-3 2 3 3 3-3"/></symbol>
+  <symbol id="import" data-group="Navigation" viewBox="0 0 24 24"><path d="M5 14v5h14v-5m-7-10v11m-4-4 4 4 4-4"/></symbol>
+  <symbol id="export" data-group="Navigation" viewBox="0 0 24 24"><path d="M5 14v5h14v-5M12 15V4M8 8l4-4 4 4"/></symbol>
+  <symbol id="bookmark" data-group="Navigation" viewBox="0 0 24 24"><path d="M6 4h12v16l-6-4-6 4Z"/></symbol>
+  <symbol id="exit" data-group="Navigation" viewBox="0 0 24 24"><path d="M11 4H4v16h7m-1-8h11m-4-4 4 4-4 4"/></symbol>
+  <symbol id="fullscreen" data-group="Navigation" viewBox="0 0 24 24"><path d="M4 9V4h5m6 0h5v5m0 6v5h-5m-6 0H4v-5"/></symbol>
+  <symbol id="sound" data-group="Navigation" viewBox="0 0 24 24"><path d="M4 9h4l5-4v14l-5-4H4Zm12 0q3 3 0 6m2-9q6 6 0 12"/></symbol>
+  <symbol id="mute" data-group="Navigation" viewBox="0 0 24 24"><path d="M4 9h4l5-4v14l-5-4H4Zm12 1 5 5m0-5-5 5"/></symbol>
+  <symbol id="keyboard" data-group="Navigation" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M6 10h.01m4 0h.01m4 0h.01m4 0h.01M6 14h.01m3 0h6m3 0h.01"/></symbol>
+  <symbol id="new-game" data-group="Navigation" viewBox="0 0 24 24"><path d="M11 5H5v14h14v-6m-4-6h7m-3.5-3.5v7"/></symbol>
+  <symbol id="reset" data-group="Navigation" viewBox="0 0 24 24"><path d="M5 10a7 7 0 1 1 1 7M5 5v5h5"/><circle cx="12" cy="12" r="1.5"/></symbol>
+  <!-- Map and layers -->
+  <symbol id="map" data-group="Map" viewBox="0 0 24 24"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3Zm6-3v15m6-12v15"/></symbol>
+  <symbol id="layers" data-group="Map" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5Zm-9 9 9 5 9-5M3 16l9 5 9-5"/></symbol>
+  <symbol id="zoom-in" data-group="Map" viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5M7 10h6m-3-3v6"/></symbol>
+  <symbol id="zoom-out" data-group="Map" viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5M7 10h6"/></symbol>
+  <symbol id="pan" data-group="Map" viewBox="0 0 24 24"><path d="M8 13V7a1.5 1.5 0 0 1 3 0v4-6a1.5 1.5 0 0 1 3 0v6-4a1.5 1.5 0 0 1 3 0v5-2a1.5 1.5 0 0 1 3 0v5c0 4-3 6-6 6h-2q-3 0-5-3l-3-4a1.5 1.5 0 0 1 2-2l2 1Z"/></symbol>
+  <symbol id="compass" data-group="Map" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m16 8-2.5 5.5L8 16l2.5-5.5Z"/></symbol>
+  <symbol id="north" data-group="Map" viewBox="0 0 24 24"><path d="M12 3 5.5 20l6.5-4 6.5 4Z"/></symbol>
+  <symbol id="locate" data-group="Map" viewBox="0 0 24 24"><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/><path d="M12 3v3m0 12v3M3 12h3m12 0h3"/></symbol>
+  <symbol id="marker" data-group="Map" viewBox="0 0 24 24"><path d="M19 10q0 4-7 11-7-7-7-11a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.3"/></symbol>
+  <symbol id="grid" data-group="Map" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="1"/><path d="M9.3 4v16m5.4-16v16M4 9.3h16M4 14.7h16"/></symbol>
+  <symbol id="route" data-group="Map" viewBox="0 0 24 24"><circle cx="6" cy="17" r="2"/><circle cx="18" cy="7" r="2"/><path d="M8 17h7a3 3 0 0 0 0-6H9a2 2 0 0 1 0-4h7"/></symbol>
+  <symbol id="detour" data-group="Map" viewBox="0 0 24 24"><path d="M4 20v-8q0-3 3-3h2m6 0h2q3 0 3-3V4m-3 3 3-3 3 3M9 20v-4m0-3v-.01m0-7V4m1 3 4 4m0-4-4 4"/></symbol>
+  <symbol id="heatmap" data-group="Map" viewBox="0 0 24 24"><path d="M12 3c1 4 7 7 7 12a7 7 0 0 1-14 0c0-4 3-6 4-8 0 3 1 4 2 4 1-3 1-5 1-8Z"/><path d="M12 13q5 4 3 6-1 2-3 2-3 0-3-3 0-2 3-5Z"/></symbol>
+  <symbol id="visibility" data-group="Map" viewBox="0 0 24 24"><path d="M3 12s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6Z"/><circle cx="12" cy="12" r="2.5"/></symbol>
+  <symbol id="visibility-off" data-group="Map" viewBox="0 0 24 24"><path d="M3 3l18 18m-6-6a3 3 0 0 1-4-4m-4-4a11 11 0 0 1 5-1c5.5 0 9 6 9 6l-2 2m-2 3q-2 1-5 1c-5.5 0-9-6-9-6l2.5-2.5"/></symbol>
+  <symbol id="measure" data-group="Map" viewBox="0 0 24 24"><path d="m3 15 12-12 6 6L9 21Zm9-9 2.5 2.5M9 9l2 2m-5 1 2.5 2.5"/></symbol>
+  <symbol id="contours" data-group="Map" viewBox="0 0 24 24"><path d="M3 16q3-6 5-3t5-5 8-4M3 20q4-6 6-3t5-4 7-4M3 11q3-6 6-4t4-2"/></symbol>
+  <symbol id="labels" data-group="Map" viewBox="0 0 24 24"><path d="M4 8V5h16v3m-8-3v14m-4 0h8"/></symbol>
+  <!-- Playback -->
+  <symbol id="play" data-group="Time" viewBox="0 0 24 24"><path d="m8 4 12 8-12 8Z"/></symbol>
+  <symbol id="pause" data-group="Time" viewBox="0 0 24 24"><path d="M8 5v14m8-14v14" stroke-width="2.5"/></symbol>
+  <symbol id="fast-forward" data-group="Time" viewBox="0 0 24 24"><path d="m4 5 8 7-8 7Zm8 0 8 7-8 7Z"/></symbol>
+  <symbol id="step" data-group="Time" viewBox="0 0 24 24"><path d="m5 5 10 7-10 7Zm14 0v14"/></symbol>
+  <symbol id="rewind" data-group="Time" viewBox="0 0 24 24"><path d="m20 5-8 7 8 7Zm-8 0-8 7 8 7Z"/></symbol>
+  <symbol id="replay" data-group="Time" viewBox="0 0 24 24"><path d="M4 10a8 8 0 1 1 1 7M4 5v5h5"/></symbol>
+  <symbol id="clock" data-group="Time" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></symbol>
+  <symbol id="calendar" data-group="Time" viewBox="0 0 24 24"><rect x="4" y="6" width="16" height="14" rx="2"/><path d="M8 4v4m8-4v4M4 10h16M8 14h.01m4 0h.01m4 0h.01m-8 3h.01m4 0h.01"/></symbol>
+  <symbol id="timeline" data-group="Time" viewBox="0 0 24 24"><circle cx="5" cy="14" r="2"/><circle cx="12" cy="14" r="2"/><circle cx="19" cy="14" r="2"/><path d="M3 14H2m5 0h3m4 0h3m4 0h1M12 12V5m-2 2 2-2 2 2"/></symbol>
+  <symbol id="sun" data-group="Time" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v3m0 14v3M2 12h3m14 0h3M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"/></symbol>
+  <symbol id="moon" data-group="Time" viewBox="0 0 24 24"><path d="M21 14a8.8 8.8 0 1 1-11-11 8.9 8.9 0 0 0 11 11Z"/></symbol>
+  <!-- Residents -->
+  <symbol id="resident" data-group="People" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20v-1q0-5 7-5t7 5v1Z"/></symbol>
+  <symbol id="population" data-group="People" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20v-2q0-4 6-4t6 4v2Zm12-15a3 3 0 0 1 0 6m2 3q4 1 4 4v2h-3"/></symbol>
+  <symbol id="follow" data-group="People" viewBox="0 0 24 24"><path d="M3 8V3h5m8 0h5v5m0 8v5h-5m-8 0H3v-5"/><circle cx="12" cy="9" r="2.5"/><path d="M8 17q0-4 4-4t4 4"/></symbol>
+  <symbol id="home" data-group="People" viewBox="0 0 24 24"><path d="m3 11 9-7 9 7m-3-2v11H6V9m4 11v-6h4v6"/></symbol>
+  <symbol id="work" data-group="People" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M8 8V4h8v4M3 13l9 2 9-2m-11 2h4"/></symbol>
+  <symbol id="walk" data-group="People" viewBox="0 0 24 24"><circle cx="13.5" cy="4.8" r="2"/><path d="m8 13 2-4 4-1 3 4 3 1m-8-4-1 6-5 5m5-5 4 2 1 4"/></symbol>
+  <symbol id="accessibility" data-group="People" viewBox="0 0 24 24"><circle cx="11" cy="4.5" r="2"/><path d="m11 8 1 6h5l2 5h2M12 11h4M8 11a5 5 0 1 0 6 7"/></symbol>
+  <symbol id="arrival" data-group="People" viewBox="0 0 24 24"><path d="M15 4h5v16h-5M3 12h12m-4-4 4 4-4 4"/></symbol>
+  <symbol id="departure" data-group="People" viewBox="0 0 24 24"><path d="M9 4H4v16h5m0-8h12m-4-4 4 4-4 4"/></symbol>
+  <symbol id="waiting" data-group="People" viewBox="0 0 24 24"><path d="M7 4h10M7 20h10M8 4v4l4 4 4-4V4M8 20v-4l4-4 4 4v4"/></symbol>
+  <symbol id="transfer" data-group="People" viewBox="0 0 24 24"><path d="M4 8h16m-4-4 4 4-4 4m4 4H4m4-4-4 4 4 4"/></symbol>
+  <symbol id="household" data-group="People" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7m-2-2v13H5V8"/><circle cx="12" cy="11" r="2"/><path d="M9 18q0-4 3-4t3 4Z"/></symbol>
+  <symbol id="missed-trip" data-group="People" viewBox="0 0 24 24"><circle cx="6" cy="17" r="2"/><path d="M8 17h6a3 3 0 0 0 3-3M7 9h5m3-5 5 5m0-5-5 5"/></symbol>
+  <!-- Transport -->
+  <symbol id="car" data-group="Transport" viewBox="0 0 24 24"><path d="m5 11 2-5h10l2 5m-15 1 1-1h14l1 1v6H4Zm2 6v2m12-2v2M7 14h2m6 0h2"/></symbol>
+  <symbol id="taxi" data-group="Transport" viewBox="0 0 24 24"><path d="M9 6V3h6v3m-10 5 2-5h10l2 5m-15 1 1-1h14l1 1v6H4Zm2 6v2m12-2v2M7 14h2m6 0h2"/></symbol>
+  <symbol id="bus" data-group="Transport" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="16" rx="3"/><path d="M5 12h14M8 6h8M7 16h1m8 0h1M7 19v2m10-2v2"/></symbol>
+  <symbol id="bus-stop" data-group="Transport" viewBox="0 0 24 24"><rect x="7" y="3" width="10" height="9" rx="2"/><path d="M10 6h4m-4 3h.01m4 0h.01M12 12v9m-4 0h8"/></symbol>
+  <symbol id="tram" data-group="Transport" viewBox="0 0 24 24"><path d="M10 5 8 2h8l-2 3m-6 13-3 4m11-4 3 4"/><rect x="6" y="5" width="12" height="13" rx="3"/><path d="M6 12h12M9 15h.01m6 0h.01"/></symbol>
+  <symbol id="train" data-group="Transport" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="15" rx="4"/><path d="M5 12h14m-7-9v9M8 15h.01m8 0h.01m-8 3-3 4m11-4 3 4M7 20h10"/></symbol>
+  <symbol id="metro" data-group="Transport" viewBox="0 0 24 24"><path d="M3 19v-7a9 9 0 0 1 18 0v7m-15 0h12"/><rect x="7" y="8" width="10" height="9" rx="2"/><path d="M7 12h10m-7 3h.01m4 0h.01"/></symbol>
+  <symbol id="station" data-group="Transport" viewBox="0 0 24 24"><path d="M3 8 12 3l9 5m-17 0h16v12H4Zm4 12v-7h8v7m-5-10h2"/></symbol>
+  <symbol id="bike" data-group="Transport" viewBox="0 0 24 24"><circle cx="6" cy="16" r="3.5"/><circle cx="18" cy="16" r="3.5"/><path d="m6 16 4-7 4 7H6m4-7h6l2 7m-3-9h3M8 8h3"/></symbol>
+  <symbol id="motorcycle" data-group="Transport" viewBox="0 0 24 24"><circle cx="6" cy="16" r="3.5"/><circle cx="18" cy="16" r="3.5"/><path d="M6 16h6l2-6h3l1 6m-4-6-1-3h4m-7 3H5l-2 2"/></symbol>
+  <symbol id="truck" data-group="Transport" viewBox="0 0 24 24"><path d="M5 17H3V5h11v12H9m5-7h4l3 3v4h-2m-4 0h-1"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></symbol>
+  <symbol id="ferry" data-group="Transport" viewBox="0 0 24 24"><path d="M6 12V7h12v5m-8-5V4h4v3M5 18l-2-5 9-3 9 3-2 5M3 20q2-2 4 0t5 0 5 0 4 0"/></symbol>
+  <symbol id="traffic" data-group="Transport" viewBox="0 0 24 24"><path d="M3 8h15m-3-3 3 3-3 3M6 16h15m-12-3-3 3 3 3M3 12v8m18-16v8"/></symbol>
+  <symbol id="signal" data-group="Transport" viewBox="0 0 24 24"><rect x="8" y="3" width="8" height="17" rx="3"/><circle cx="12" cy="7" r="1"/><circle cx="12" cy="11.5" r="1"/><circle cx="12" cy="16" r="1"/><path d="M12 20v2"/></symbol>
+  <symbol id="road" data-group="Transport" viewBox="0 0 24 24"><path d="M7 3 4 21M17 3l3 18M12 4v3m0 3v4m0 3v3"/></symbol>
+  <symbol id="one-way" data-group="Transport" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M7 12h10m-4-4 4 4-4 4"/></symbol>
+  <symbol id="junction" data-group="Transport" viewBox="0 0 24 24"><path d="M9 3v6H3m12-6v6h6m0 6h-6v6m-6 0v-6H3"/></symbol>
+  <symbol id="bridge" data-group="Transport" viewBox="0 0 24 24"><path d="M3 16h18M6 16V6m12 10V6M3 10q9 8 18 0m-9 4v2M6 16v5m12-5v5"/></symbol>
+  <symbol id="tunnel" data-group="Transport" viewBox="0 0 24 24"><path d="M3 20v-8a9 9 0 0 1 18 0v8m-15 0v-8a6 6 0 0 1 12 0v8m-6-4v4"/></symbol>
+  <symbol id="parking" data-group="Transport" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M10 16V8h3a2 2 0 0 1 0 4h-3"/></symbol>
+  <symbol id="rail" data-group="Transport" viewBox="0 0 24 24"><path d="M8 3 7 21m9-18 1 18M6 6h12M6 10h12M5 14h14M5 18h14"/></symbol>
+  <symbol id="road-closure" data-group="Transport" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="8" rx="1"/><path d="m6 15 4-8m1 8 4-8m1 8 4-8M6 15v5m12-5v5"/></symbol>
+  <symbol id="queue" data-group="Transport" viewBox="0 0 24 24"><rect x="3" y="9" width="4" height="6" rx="1"/><rect x="10" y="9" width="4" height="6" rx="1"/><rect x="17" y="9" width="4" height="6" rx="1"/><path d="M3 5h18M3 19h18"/></symbol>
+  <symbol id="crosswalk" data-group="Transport" viewBox="0 0 24 24"><path d="M4 4h16M4 20h16M5 8l-1 8m6-8-1 8m6-8-1 8m6-8-1 8"/></symbol>
+  <symbol id="no-entry" data-group="Transport" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M7 12h10" stroke-width="2.5"/></symbol>
+  <symbol id="terminal" data-group="Transport" viewBox="0 0 24 24"><path d="M3 10h18M5 10v10m14-10v10M3 10l9-6 9 6M8 17h8m-7 0v3m6-3v3"/></symbol>
+  <symbol id="roadworks" data-group="Transport" viewBox="0 0 24 24"><path d="M7 18 10.5 5h3L17 18Zm-3 0h16v3H4Zm5-6h6"/></symbol>
+  <!-- Land use and destinations -->
+  <symbol id="district" data-group="City" viewBox="0 0 24 24"><path d="m3 7 7-4 5 3 6-1v13l-7 3-5-3-6 1Zm7-4-1 15m6-12-1 15M3 13l18-1"/></symbol>
+  <symbol id="residential" data-group="City" viewBox="0 0 24 24"><path d="m3 11 6-6 6 6m-2-2v10H5V9m3 10v-4h2v4m3-13 3-3 5 5m-1-1v12h-4"/></symbol>
+  <symbol id="commercial" data-group="City" viewBox="0 0 24 24"><path d="m4 7 2-3h12l2 3v4H4Zm2 4v9h12v-9M9 7v4m6-4v4m-5 9v-6h4v6"/></symbol>
+  <symbol id="industry" data-group="City" viewBox="0 0 24 24"><path d="M3 20V10l6 3V9l6 4 2-9h3l1 16Zm4-3h2m3 0h2m3 0h2"/></symbol>
+  <symbol id="office" data-group="City" viewBox="0 0 24 24"><path d="M6 21V4h12v17M3 21h18M9 8h1m4 0h1m-6 4h1m4 0h1m-6 4h1m4 0h1m-4 5v-3h2v3"/></symbol>
+  <symbol id="mall" data-group="City" viewBox="0 0 24 24"><path d="M5 8h14l1 12H4Zm4 2V6a3 3 0 0 1 6 0v4"/></symbol>
+  <symbol id="park" data-group="City" viewBox="0 0 24 24"><path d="m9 3-4 6h2l-4 6h12l-4-6h2Zm0 12v5m8-11 4 6h-4m0 0v5M3 20h18"/></symbol>
+  <symbol id="school" data-group="City" viewBox="0 0 24 24"><path d="m3 9 9-5 9 5-9 5Zm4 2v5q5 4 10 0v-5m4-2v7"/></symbol>
+  <symbol id="hospital" data-group="City" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M10 7h4v3h3v4h-3v3h-4v-3H7v-4h3Z"/></symbol>
+  <symbol id="landmark" data-group="City" viewBox="0 0 24 24"><path d="m4 9 8-5 8 5Zm1 11h14M7 9v8m5-8v8m5-8v8M5 17h14"/></symbol>
+  <symbol id="mixed-use" data-group="City" viewBox="0 0 24 24"><path d="M4 20V9l5-4 5 4v11Zm10-9h6v9h-6M7 12h4m-4 3h4m6-1h1m-1 3h1"/></symbol>
+  <symbol id="water" data-group="City" viewBox="0 0 24 24"><path d="M3 7q2.5-2.5 5 0t5 0 5 0 3 1M3 12q2.5-2.5 5 0t5 0 5 0 3 1M3 17q2.5-2.5 5 0t5 0 5 0 3 1"/></symbol>
+  <symbol id="building" data-group="City" viewBox="0 0 24 24"><path d="M4 20V8h7V4h9v16Zm3-8h1m-1 4h1m6-8h2m-2 4h2m-2 4h2"/></symbol>
+  <symbol id="civic" data-group="City" viewBox="0 0 24 24"><path d="m3 8 9-5 9 5H3Zm1 13h16M6 8v10m4-10v10m4-10v10m4-10v10M4 18h16"/></symbol>
+  <symbol id="construction" data-group="City" viewBox="0 0 24 24"><path d="M7 21V4l4 4v13m-7 0h10M3 8h18m-3 0v5l-2 2 2 2 2-2"/></symbol>
+  <!-- Utilities and services -->
+  <symbol id="power" data-group="Utilities" viewBox="0 0 24 24"><path d="m13 3-7 10h5l-1 8 8-11h-5Z"/></symbol>
+  <symbol id="power-grid" data-group="Utilities" viewBox="0 0 24 24"><path d="m8 21 3-18h2l3 18m-10-15h12M5 10h14m-9 4 4 3m0-3-4 3M5 10v3m14-3v3"/></symbol>
+  <symbol id="water-supply" data-group="Utilities" viewBox="0 0 24 24"><path d="M12 3c2 4 6 7 6 11a6 6 0 1 1-12 0c0-4 4-7 6-11Z"/><path d="M9 15q0 2 2 3"/></symbol>
+  <symbol id="pipe" data-group="Utilities" viewBox="0 0 24 24"><path d="M3 6h10q4 0 4 4v11h-6V11H3Zm0 0v5m8 7h6M8 6v5m3 10h6"/></symbol>
+  <symbol id="pump" data-group="Utilities" viewBox="0 0 24 24"><circle cx="12" cy="12" r="6"/><path d="M6 12H3m15 0h3M3 9v6m18-6v6m-10-5 3 2-3 2M8 20h8"/></symbol>
+  <symbol id="coverage" data-group="Utilities" viewBox="0 0 24 24"><path d="M4 18V7l5-3 6 3 5-3v12l-5 4-6-3Z"/><path d="m8 12 3 3 5-5"/></symbol>
+  <symbol id="waste" data-group="Utilities" viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3m3 0-1 13H7L6 7m4 4v5m4-5v5"/></symbol>
+  <symbol id="shelter" data-group="Utilities" viewBox="0 0 24 24"><path d="m3 11 9-7 9 7m-3-2v11H6V9m6 7-3-3a1.8 1.8 0 0 1 3-2 1.8 1.8 0 0 1 3 2Z"/></symbol>
+  <symbol id="repair" data-group="Utilities" viewBox="0 0 24 24"><path d="M15 4a5 5 0 0 0-5 7l-6 6a2 2 0 0 0 3 3l6-6a5 5 0 0 0 7-5l-4 2-3-3Z"/></symbol>
+  <symbol id="substation" data-group="Utilities" viewBox="0 0 24 24"><rect x="5" y="7" width="14" height="13" rx="2"/><path d="M8 7V4m8 3V4m-3 5-4 5h4l-2 4"/></symbol>
+  <symbol id="water-tower" data-group="Utilities" viewBox="0 0 24 24"><path d="M5 7 12 4l7 3v4q0 3-3 3H8q-3 0-3-3Zm4 7-2 7m8-7 2 7m-9-3h8M5 8h14"/></symbol>
+  <!-- Alerts and disasters -->
+  <symbol id="warning" data-group="Incidents" viewBox="0 0 24 24"><path d="m12 3 9 17H3Zm0 6v5m0 3h.01"/></symbol>
+  <symbol id="incident" data-group="Incidents" viewBox="0 0 24 24"><path d="m12 3 3 3 4 1 1 4 1 4-3 3-4 1-4 2-4-3-3-3 1-4 1-4 4-1Zm0 6v4m0 3h.01"/></symbol>
+  <symbol id="flood" data-group="Incidents" viewBox="0 0 24 24"><path d="m4 10 7-6 7 6m-2-2v6M6 8v6m4 0v-3h3v2M3 16q2-2 4 0t5 0 5 0 4 0m-18 4q2-2 4 0t5 0 5 0 4 0"/></symbol>
+  <symbol id="fire" data-group="Incidents" viewBox="0 0 24 24"><path d="M12 3q0 4 4 7 3 2 3 6a7 6 0 0 1-14 0q0-4 4-8 0 4 2 4 2-4 1-9Z"/><path d="M12 15q4 3 2 5-2 2-4 0t2-5Z"/></symbol>
+  <symbol id="outage" data-group="Incidents" viewBox="0 0 24 24"><path d="m4 4 16 16m-9-9-2 3h3l-1 6 3-4m-1-9 2-4-1 6h4l-3 4"/></symbol>
+  <symbol id="storm" data-group="Incidents" viewBox="0 0 24 24"><path d="M6 14a4 4 0 0 1 0-8 5 5 0 0 1 9 0 4 4 0 1 1 3 8h-2m-4-2-3 5h4l-2 4m-6-4-1 2m15-2-1 2"/></symbol>
+  <symbol id="collision" data-group="Incidents" viewBox="0 0 24 24"><path d="m12 3 1.4 5 4.6-2-2 4.5 5 1.5-5 1.4 2 4.6-4.6-2-1.4 5-1.5-5-4.5 2 2-4.6-5-1.4 5-1.5L6 6l4.5 2Z"/></symbol>
+  <symbol id="evacuation" data-group="Incidents" viewBox="0 0 24 24"><path d="M11 4H5v16h6m3-3 5-5-5-5m-6 5h11"/></symbol>
+  <symbol id="ambulance" data-group="Incidents" viewBox="0 0 24 24"><path d="M5 17H3V6h12v11H9m6-7h4l2 3v4h-2M9 9v5m-2.5-2.5h5"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></symbol>
+  <symbol id="emergency" data-group="Incidents" viewBox="0 0 24 24"><path d="M7 17v-5a5 5 0 0 1 10 0v5m-12 0h14v3H5Zm7-15v2M5 5l2 2m12-2-2 2M2 11h3m14 0h3"/></symbol>
+  <symbol id="shield" data-group="Incidents" viewBox="0 0 24 24"><path d="m12 3 7 3v6q0 5-7 9-7-4-7-9V6Zm-3 9 2 2 4-4"/></symbol>
+  <symbol id="snow" data-group="Incidents" viewBox="0 0 24 24"><path d="M12 3v18M4 7.5l16 9m0-9-16 9M9 5l3 2 3-2m-6 14 3-2 3 2M4 11l3.5-1.5V6M20 13l-3.5 1.5V18m0-12v3.5L20 11M7.5 18v-3.5L4 13"/></symbol>
+  <symbol id="heat-wave" data-group="Incidents" viewBox="0 0 24 24"><path d="M10 14V6a2 2 0 1 1 4 0v8a4 4 0 1 1-4 0Zm2 2V9m5-2h3m-3 3h2M5 8q-3 2 0 4"/></symbol>
+  <symbol id="earthquake" data-group="Incidents" viewBox="0 0 24 24"><path d="M3 13h4l3-7 3 12 3-8 2 3h3M3 5h3m12 14h3"/></symbol>
+  <symbol id="recovery" data-group="Incidents" viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 3-6M4 6v6h6m-1 1 2 2 5-5"/></symbol>
+  <!-- Economy and results -->
+  <symbol id="budget" data-group="Economy" viewBox="0 0 24 24"><rect x="4" y="6" width="16" height="13" rx="2"/><path d="M4 9h16m0 3h-5v4h5m-3-2h.01M7 6l9-3 2 3"/></symbol>
+  <symbol id="coin" data-group="Economy" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M15 9h-4q-2 0-2 1.5t2 1.5h2q2 0 2 1.5t-2 1.5H9m3-8v10"/></symbol>
+  <symbol id="revenue" data-group="Economy" viewBox="0 0 24 24"><path d="M4 5v15h16M7 15l5-4 3 1 5-6m-4 0h4v4"/></symbol>
+  <symbol id="expenses" data-group="Economy" viewBox="0 0 24 24"><path d="M4 5v15h16M7 8l5 4 3-1 5 6m-4 0h4v-4"/></symbol>
+  <symbol id="ledger" data-group="Economy" viewBox="0 0 24 24"><path d="M5 4h14v16H5Zm3 0v16m3-12h5m-5 4h5m-5 4h5"/></symbol>
+  <symbol id="chart" data-group="Economy" viewBox="0 0 24 24"><path d="M4 4v16h16M8 16v-4m4 4V8m4 8v-6m4 6V5"/></symbol>
+  <symbol id="compare" data-group="Economy" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M12 5v14m-5-6 2-2m6 0 2 2"/></symbol>
+  <symbol id="capacity" data-group="Economy" viewBox="0 0 24 24"><path d="M3 16a9 9 0 1 1 18 0v3H3Zm9 0 4-5M6 14l1 1m5-7v1m5 6 1-1"/></symbol>
+  <!-- Campaign and editor -->
+  <symbol id="campaign" data-group="Scenario editor" viewBox="0 0 24 24"><path d="M5 20V4m0 2h11l-2 4 2 4H5m8 6h6"/></symbol>
+  <symbol id="scenario" data-group="Scenario editor" viewBox="0 0 24 24"><path d="M6 4h8l4 4v12H6Zm8 0v5h4m-9 4h6m-6 3h5"/></symbol>
+  <symbol id="editor" data-group="Scenario editor" viewBox="0 0 24 24"><path d="M11 5H5v14h14v-6m-9 2 1-4 7-7 3 3-7 7Zm6-9 3 3"/></symbol>
+  <symbol id="sandbox" data-group="Scenario editor" viewBox="0 0 24 24"><path d="m12 3 9 5v8l-9 5-9-5V8Zm0 10 9-5m-9 5L3 8m9 5v8"/></symbol>
+  <symbol id="objective" data-group="Scenario editor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r=".6"/></symbol>
+  <symbol id="trophy" data-group="Scenario editor" viewBox="0 0 24 24"><path d="M8 4h8v7a4 4 0 0 1-8 0Zm0 2H4v3q0 4 4 4m8-7h4v3q0 4-4 4m-4 2v4m-4 1h8"/></symbol>
+  <symbol id="bot" data-group="Scenario editor" viewBox="0 0 24 24"><rect x="5" y="8" width="14" height="11" rx="3"/><path d="M12 8V5m-7 8H3m16 0h2m-12 0h.01m6 0h.01m-5 3h4"/><circle cx="12" cy="4" r="1"/></symbol>
+  <symbol id="package" data-group="Scenario editor" viewBox="0 0 24 24"><path d="m12 3 8 4v10l-8 4-8-4V7Zm0 8 8-4m-8 4L4 7m8 4v10M8 5l8 4v4"/></symbol>
+  <symbol id="mod" data-group="Scenario editor" viewBox="0 0 24 24"><path d="M4 8h5V6a2 2 0 0 1 4 0v2h6v4h-2a2 2 0 0 0 0 4h2v4h-6v-2a2 2 0 0 0-4 0v2H4Z"/></symbol>
+  <symbol id="select" data-group="Scenario editor" viewBox="0 0 24 24"><path d="m6 4 13 10-6 1-2 6Z"/></symbol>
+  <symbol id="build" data-group="Scenario editor" viewBox="0 0 24 24"><path d="m4 6 4-3 5 5-3 3Zm6 5 8 9 3-3-9-8"/></symbol>
+  <symbol id="bulldoze" data-group="Scenario editor" viewBox="0 0 24 24"><path d="m4 14 8-9 7 6-7 8H9Zm4-5 7 6m-3 4h9"/></symbol>
+  <symbol id="zone-brush" data-group="Scenario editor" viewBox="0 0 24 24"><path d="m12 14 7-10 2 2-8 11m0-3q-4-2-6 1 0 3-3 4 5 3 9-2Z"/><path d="M3 8h5m-5 4h2M6 5v5m3-5h4"/></symbol>
+  <symbol id="place-node" data-group="Scenario editor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 3v4m0 10v4M3 12h4m10 0h4m-7-2v4m-2-2h4"/></symbol>
+  <symbol id="connect" data-group="Scenario editor" viewBox="0 0 24 24"><circle cx="5" cy="18" r="2"/><circle cx="19" cy="6" r="2"/><path d="M7 18h4a2 2 0 0 0 2-2v-8a2 2 0 0 1 2-2h2"/></symbol>
+  <symbol id="copy" data-group="Scenario editor" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></symbol>
+  <symbol id="undo" data-group="Scenario editor" viewBox="0 0 24 24"><path d="m8 5-5 5 5 5m-5-5h11a5 5 0 0 1 5 5v2"/></symbol>
+  <symbol id="redo" data-group="Scenario editor" viewBox="0 0 24 24"><path d="m16 5 5 5-5 5m5-5H10a5 5 0 0 0-5 5v2"/></symbol>
+  <symbol id="event" data-group="Scenario editor" viewBox="0 0 24 24"><path d="M3 18h18M6 6v12m0-11h10l-3 3 3 3H6m12 5v3m-9-3v3"/></symbol>
+  <symbol id="validate" data-group="Scenario editor" viewBox="0 0 24 24"><path d="M8 5H5v16h14V5h-3m-8-2h8v5H8Zm0 11 3 3 5-5"/></symbol>
+  <symbol id="test-run" data-group="Scenario editor" viewBox="0 0 24 24"><path d="M8 4h8m-6 0v7l-5 7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2l-5-7V4m-6 11h8"/></symbol>
+  <symbol id="seed" data-group="Scenario editor" viewBox="0 0 24 24"><path d="M12 20v-7m0 4Q4 17 4 9q7 0 8 8Zm0-4q0-7 7-9 2 8-7 9Zm-5 7h10"/></symbol>
+  <symbol id="rules" data-group="Scenario editor" viewBox="0 0 24 24"><path d="M5 5h14v14H5Zm3 4 1 1 2-2m2 1h3m-8 6 1 1 2-2m2 1h3"/></symbol>
+  <!-- Generic feedback and affordances -->
+  <symbol id="check" data-group="Status" viewBox="0 0 24 24"><path d="m5 12 4 4 10-10"/></symbol>
+  <symbol id="error" data-group="Status" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m9 9 6 6m0-6-6 6"/></symbol>
+  <symbol id="plus" data-group="Status" viewBox="0 0 24 24"><path d="M5 12h14m-7-7v14"/></symbol>
+  <symbol id="minus" data-group="Status" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+  <symbol id="lock" data-group="Status" viewBox="0 0 24 24"><rect x="6" y="10" width="12" height="10" rx="2"/><path d="M9 10V7a3 3 0 1 1 6 0v3m-3 4v2"/></symbol>
+  <symbol id="unlock" data-group="Status" viewBox="0 0 24 24"><rect x="6" y="10" width="12" height="10" rx="2"/><path d="M9 10V7a3 3 0 0 1 5.7-1.3M12 14v2"/></symbol>
+  <symbol id="filter" data-group="Status" viewBox="0 0 24 24"><path d="M4 5h16l-6 7v5l-4 2v-7Z"/></symbol>
+  <symbol id="sort" data-group="Status" viewBox="0 0 24 24"><path d="M7 20V4M4 7l3-3 3 3m7-3v16m-3-3 3 3 3-3"/></symbol>
+  <symbol id="bell" data-group="Status" viewBox="0 0 24 24"><path d="M5 17h14l-2-3V9a5 5 0 0 0-10 0v5Zm5 3a2 2 0 0 0 4 0"/></symbol>
+  <symbol id="more" data-group="Status" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></symbol>
+  <symbol id="refresh" data-group="Status" viewBox="0 0 24 24"><path d="M19 9a7.5 7.5 0 0 0-13-2L4 9m0-5v5h5m-4 6a7.5 7.5 0 0 0 13 2l2-2m0 5v-5h-5"/></symbol>
+  <symbol id="offline" data-group="Status" viewBox="0 0 24 24"><path d="m4 4 16 16M3 9q2-2 4-3m3-1a14 14 0 0 1 11 4M6 13q2-2 4-2m4 0q2 1 4 2m-9 3q3-2 6 0m-3 4h.01"/></symbol>
+</svg>

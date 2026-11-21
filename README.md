@@ -18,6 +18,10 @@ uv run --locked --no-build python tools/check_toolchain.py
 
 `uv.lock` pins CMake (including CTest), pyosmium, and transitive packages by version and SHA-256. The first run can download Python and wheels. Once they are cached on the machine, the same setup and check work locally with `uv run --offline --locked --no-build python tools/check_toolchain.py`. The PBF check uses a generated fixture. [CMake package](https://pypi.org/project/cmake/4.4.5/) · [Pyosmium package](https://pypi.org/project/osmium/4.3.2/)
 
+## Game assets
+
+The [asset kit](assets/game/README.md) includes editable resident portraits and transport sprites, an SVG icon catalog, reusable menu styles, and generated menu and campaign illustrations. Its local browser gallery previews variants and exports SVGs and recipes.
+
 ## City data downloads
 
 The [2026-11-21 city data release](https://github.com/Riftar/simlife/releases/tag/data-2026-11-21) has one archive per city for New York, Bangkok, Jakarta, Tokyo, and Paris. Each archive includes OSM XML, compiled maps, timetable snapshots from the available agencies, and a manifest with checksums and data licenses. Bangkok, Jakarta, and Tokyo also include color-coded train overlays.

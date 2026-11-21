@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>SimLife Asset Library</title>
+  <link rel="icon" type="image/svg+xml" href="app-icon.svg">
+  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="preview.css">
+  <script type="module" src="preview.mjs"></script>
+</head>
+<body>
+  <header class="masthead">
+    <div class="page masthead__inner">
+      <a class="brand" href="#top"><span class="brand__mark" data-icon="route"></span>SimLife <span class="brand__section">Asset library</span></a>
+      <nav aria-label="Asset library">
+        <a href="#menus">Menus</a>
+        <a href="#portraits">Portraits</a>
+        <a href="#vehicles">Transport</a>
+        <a href="#icons">Icons</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page" id="top">
+    <section id="menus" aria-label="Menu assets">
+      <div class="sl-menu">
+        <div class="sl-menu__content">
+          <h1 class="sl-menu__title">SimLife</h1>
+          <p class="sl-menu__description">Follow a commuter home. See what happens when you change the city.</p>
+          <nav class="sl-menu__actions" aria-label="Game menu preview">
+            <a class="sl-button sl-button--primary" href="#campaign"><span data-icon="campaign"></span>Campaign</a>
+            <a class="sl-button sl-button--quiet" href="#portraits"><span data-icon="follow"></span>Commuter view</a>
+            <a class="sl-button sl-button--quiet" href="#vehicles"><span data-icon="bus"></span>Transport</a>
+            <a class="sl-button sl-button--quiet" href="#icons" data-open-group="Scenario editor"><span data-icon="editor"></span>Scenario tools</a>
+          </nav>
+        </div>
+        <figure class="sl-menu__art">
+          <img width="1536" height="1024" src="illustrations/last-train-home.png" alt="Trains and cars crossing a green bridge over a river at dusk">
+        </figure>
+      </div>
+
+      <div class="menu-examples" id="campaign">
+        <article class="sl-scenario">
+          <img width="1536" height="1024" src="illustrations/high-water.png" loading="lazy" alt="Recovery crews working beside a flooded waterfront road">
+          <div class="sl-scenario__body">
+            <span class="sl-status"><span data-icon="flood"></span>Flood recovery</span>
+            <h3>High Water</h3>
+            <p>Reroute commuters and restore services after the river covers the waterfront road.</p>
+          </div>
+        </article>
+
+        <section class="control-panel" aria-labelledby="controls-title">
+          <h2 id="controls-title">Playback controls</h2>
+          <div class="playback">
+            <button id="play-toggle" class="sl-button sl-button--icon" type="button" aria-pressed="false" aria-label="Play" data-icon="play"></button>
+            <button id="step" class="sl-button sl-button--icon" type="button" aria-label="Step forward" data-icon="step"></button>
+            <button id="rewind" class="sl-button sl-button--icon" type="button" aria-label="Reset playback" data-icon="rewind"></button>
+            <output id="playback-time" aria-label="Preview time">17:24</output>
+          </div>
+          <div class="badges" aria-label="Status examples">
+            <span class="sl-status"><span data-icon="check"></span>On time</span>
+            <span class="sl-status sl-status--delay"><span data-icon="waiting"></span>Delayed</span>
+            <span class="sl-status sl-status--closed"><span data-icon="road-closure"></span>Closed</span>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="library-section" id="portraits" aria-labelledby="portraits-title">
+      <div class="section-head">
+        <h2 id="portraits-title">Resident portraits</h2>
+        <p>Build a portrait from layers or generate one from a resident ID.</p>
+      </div>
+      <div class="asset-editor">
+        <div class="asset-preview">
+          <img id="portrait-preview" width="160" height="160" alt="Editable resident portrait">
+          <div id="portrait-library" class="samples samples--portraits" aria-label="Portrait presets"></div>
+        </div>
+        <div class="asset-controls">
+          <div class="seed-row">
+            <label>Resident ID <input id="resident-id" value="12837" maxlength="40" autocomplete="off"></label>
+            <button class="sl-button" id="generate-portrait" type="button">Generate portrait</button>
+          </div>
+          <div id="portrait-fields" class="fields"></div>
+          <div class="actions">
+            <button class="sl-button sl-button--primary" id="portrait-svg" type="button"><span data-icon="export"></span>Save SVG</button>
+            <button class="sl-button" id="portrait-recipe" type="button">Save recipe</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="library-section" id="vehicles" aria-labelledby="vehicles-title">
+      <div class="section-head">
+        <h2 id="vehicles-title">Transport sprites</h2>
+        <p>Choose a vehicle, set its livery, and preview map states.</p>
+      </div>
+      <div class="asset-editor">
+        <div class="asset-preview asset-preview--vehicle">
+          <div class="vehicle-stage">
+            <img id="vehicle-preview" width="154" height="154" alt="Editable top-down vehicle">
+            <div class="vehicle-scale"><img id="vehicle-small" width="32" height="32" alt=""><span>Map size</span></div>
+          </div>
+          <div id="vehicle-library" class="samples samples--vehicles" aria-label="Vehicle presets"></div>
+        </div>
+        <div class="asset-controls">
+          <div id="vehicle-fields" class="fields"></div>
+          <div class="fields vehicle-colors">
+            <label>Body <input id="body-color" type="color" value="#638480"></label>
+            <label>Accent <input id="accent-color" type="color" value="#f3e2b3"></label>
+          </div>
+          <div class="actions">
+            <button class="sl-button sl-button--primary" id="vehicle-svg" type="button"><span data-icon="export"></span>Save SVG</button>
+            <button class="sl-button" id="vehicle-recipe" type="button">Save recipe</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="library-section" id="icons" aria-labelledby="icons-title">
+      <div class="section-head">
+        <h2 id="icons-title">Game icons</h2>
+        <p>Filter by tool or system. Select an icon to download its SVG.</p>
+      </div>
+      <div class="icon-filter">
+        <label>Find an icon <input id="icon-search" type="search" placeholder="Traffic, flood, save…" autocomplete="off"></label>
+        <label>Category <select id="icon-group"><option value="">All categories</option></select></label>
+        <output id="icon-count" aria-live="polite">Loading icons…</output>
+      </div>
+      <div class="icon-library" id="icon-library"></div>
+    </section>
+  </main>
+  <footer class="page"><a href="#top">Back to top ↑</a></footer>
+</body>
+</html>

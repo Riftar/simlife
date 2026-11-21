@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>SimLife</title>
+  <rect x="1" y="1" width="62" height="62" rx="15" fill="#193a2e"/>
+  <rect x="4" y="4" width="56" height="56" rx="12" fill="none" stroke="#739485" stroke-opacity=".6"/>
+  <path d="M26 12q-1 11 7 19t6 21h-8q2-9-6-17t-8-23Z" fill="#6f9b9e"/>
+  <path d="M13 22h7m25 18h6m-10 8h10M37 17h10m-33 28h9" fill="none" stroke="#9aaf8f" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M17 39h5l20-13h5" fill="none" stroke="#f3dfab" stroke-width="3.7" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="14" cy="39" r="3.2" fill="#193a2e" stroke="#f3dfab" stroke-width="2.4"/>
+  <circle cx="50" cy="26" r="3.2" fill="#193a2e" stroke="#f3dfab" stroke-width="2.4"/>
+</svg>
